@@ -5,27 +5,35 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electric Cloud Open Source</title>
+    <meta name="description" content="Electric Cloud Open Source">
 
-    <title>Electric Cloud</title>
-    <meta name="description" content="Electric Cloud Opersource">
-
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.ico">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   </head>
 
   <body>
-    333
+    <div class="main">
+      <div class="header">
+          <div class="header__inner clearfix">
+              <div class="header__logo"><img src="{{ site.baseurl }}/assets/logo.png" alt="logo"></div>
+              <a href="https://github.com/electric-cloud/" class="header__right-link">GitHub Electric Cloud</a>
+          </div>
+      </div>
+      <div class="content">
+          <div class="content__inner">
 
-    <header class="site-header">
-      I am header
-    </header>
+              {% include menu.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+              <div class="center-content">
+                  {{ content }}
+              </div>
+
+              {% include plugins.html %}
+
+          </div>
       </div>
     </div>
-
-    {% include footer.html %}
 
   </body>
 
